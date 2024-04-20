@@ -1,0 +1,20 @@
+package LeetCode;
+
+public class Shuffle_the_Array {
+
+    public int[] shuffle(int[] nums, int n) {
+
+
+        int ans[] = new int[n*2];
+        int count = 0;
+        for(int i=0;i<n;i++)
+        {
+            ans[count] = nums[i];
+            ans[count+1] = nums[i+n];
+            count+=2;
+        }
+        return ans;
+
+        
+    } 
+}
