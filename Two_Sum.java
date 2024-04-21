@@ -2,7 +2,8 @@ package LeetCode;
 
 public class Two_Sum {
 
-    public int[] twoSum(int[] nums, int target) {
+    public int[] twoSum(int[] nums, int target) 
+    {
 
 
          >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> BRUTE FORCE METHOD <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -11,6 +12,7 @@ public class Two_Sum {
 
        int n = nums.length;
        int result[] = new int[2];
+
        for(int i=0;i<n-1;i++)
        {
            for(int j=i+1;j<n;j++)
@@ -21,6 +23,7 @@ public class Two_Sum {
                    result[1] = j; ￼
                }
            }
+
        return result; 
 
 
@@ -34,6 +37,7 @@ public class Two_Sum {
 
        int n = nums.length;
        HashMap<Integer , Integer> map = new HashMap<>();
+
        for(int i=0;i<n;i++)
        {
            int remaining = target - nums[i];
@@ -43,7 +47,9 @@ public class Two_Sum {
            }
            map.put(nums[i],i);
        }
+
        return new int[]{};
+       
    }
 }
     
