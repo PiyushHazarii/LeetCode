@@ -2,9 +2,11 @@ package LeetCode;
 
 public class Number_of_Good_Pairs {
 
-    public int numIdenticalPairs(int[] nums) {
+    public int numIdenticalPairs(int[] nums) 
+    {
         int n= nums.length;
         int count =0;
+
         for(int i=0;i<n;i++)
         {
             for(int j=0;j<n;j++)
@@ -15,6 +17,7 @@ public class Number_of_Good_Pairs {
                 }
             }
         }
+        
         return count;
         
     }
